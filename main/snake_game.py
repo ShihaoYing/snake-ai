@@ -8,6 +8,7 @@ os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
 from pygame import mixer
 
+
 class SnakeGame:
     def __init__(self, seed=0, board_size=12, silent_mode=True):
         self.board_size = board_size
@@ -27,7 +28,7 @@ class SnakeGame:
             self.font = pygame.font.Font(None, 36)
 
             # Load sound effects
-            mixer.init()
+            # mixer.init()
             self.sound_eat = mixer.Sound("sound/eat.wav")
             self.sound_game_over = mixer.Sound("sound/game_over.wav")
             self.sound_victory = mixer.Sound("sound/victory.wav")
